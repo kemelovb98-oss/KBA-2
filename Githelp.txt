@@ -5,6 +5,7 @@ git init
 git remote add origin https://github.com/kemelovb98-oss/KBA-2.git
 
 git status
+нужно создать gitignore
 git add
 git commit -m""
 git push origin main
