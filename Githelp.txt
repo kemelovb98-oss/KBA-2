@@ -7,3 +7,4 @@ git remote add origin https://github.com/kemelovb98-oss/KBA-2.git
 git status
 git add
 git commit -m""
+git push origin main
