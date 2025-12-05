@@ -6,6 +6,10 @@ git remote add origin https://github.com/kemelovb98-oss/KBA-2.git
 
 git status
 нужно создать gitignore
+git add .
 git add
 git commit -m""
 git push origin main
+git rm -r название файла или тип
+git branche посмотреть ветки
+git branche

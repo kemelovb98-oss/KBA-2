@@ -15,3 +15,7 @@ Asuno = Hero("asuno",101,1001)
 # print(Asuno.name)
 
 print(Asuno.base_action())
+
+# print(kirito.lvl
+#       )
+# print(Asuno.name)
