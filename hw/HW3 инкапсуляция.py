@@ -45,3 +45,5 @@ print(f"Цена после установки скидки 15%: ${item.get_pric
 item.apply_extra_discount("GUEST") # Неверный код
 item.apply_extra_discount("VIP123") # Верный код
 print(f"Финальная цена после доп. скидки: ${item.get_price()}")
+
+
