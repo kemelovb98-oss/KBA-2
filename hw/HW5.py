@@ -85,3 +85,61 @@ if __name__ == "__main__":
     handler.start(regular_user)
     handler.ban(regular_user)  # Должно выдать ошибку
     handler.message(regular_user)
+
+\
+# #Задача 2
+# import datetime
+#
+# def security_audit(func):
+#     def wrapper(*args, **kwargs):
+#         current_time = datetime.datetime.now().strftime("%H:%M:%S")
+#         print(f"--- [AUDIT] Вызов {func.__name__} в {current_time} ---")
+#         return func(*args, **kwargs)
+#     return wrapper
+#
+# class GameServer:
+#     server_brand = "CyberArena"
+#     active_connections = 0
+#
+#     def __init__(self, player_name, level=1):
+#         self.player_name = player_name
+#         self.level = level
+#         GameServer._register_connection()
+#
+#     @security_audit
+#     def upgrade_level(self, points):
+#         self.level += points
+#         print(f"🎮 Игрок {self.player_name} повысил уровень до {self.level}")
+#
+#     @security_audit
+#     def reset_progress(self):
+#         self.level = 1
+#         print(f"⚠️ Прогресс игрока {self.player_name} был сброшен")
+#
+#     @classmethod
+#     def update_brand(cls, new_name):
+#         old_name = cls.server_brand
+#         cls.server_brand = new_name
+#         print(f"🌐 Сервер '{old_name}' переименован в '{new_name}'")
+#
+#     @classmethod
+#     def _register_connection(cls):
+#         cls.active_connections += 1
+#
+#     @staticmethod
+#     def get_server_rules():
+#         return "Правила: 1. Не читерить. 2. Уважать других игроков."
+#
+# # Демонстрация
+# print(GameServer.get_server_rules())
+#
+# p1 = GameServer("Maximus", 10)
+# p2 = GameServer("SniperElite", 25)
+#
+# p1.upgrade_level(5)
+# p2.reset_progress()
+#
+# GameServer.update_brand("UltraNet")
+#
+# print(f"Текущий бренд: {p1.server_brand}")
+# print(f"Всего подключений: {GameServer.active_connections}")
