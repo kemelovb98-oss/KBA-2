@@ -86,7 +86,7 @@ if __name__ == "__main__":
     handler.ban(regular_user)  # Должно выдать ошибку
     handler.message(regular_user)
 
-\
+
 # #Задача 2
 # import datetime
 #
